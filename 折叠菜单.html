@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        #x{
+            height: 100px;
+            width: 100px;
+        }
+        #y{
+            height: 60px;
+            border: 20px solid rgba(0,0,0,0.5);
+        }
+        .xxx{
+            height: 30px;
+            width: 200px;
+            border: 1px solid #000;
+        }
+        .yyy{
+            width: 200px;
+            border: 1px solid #000;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="div1" class="xxx">1</div>
+    <div id="div11" class="yyy">
+    <li>1111111</li>
+    <li>1111111</li>
+    <li>1111111</li>
+    <li>1111111</li>
+    <li>1111111</li>
+</div>
+<div id="div2" class="xxx">2</div>
+    <div id="div22" class="yyy">
+    <li>2222222</li>
+    <li>2222222</li>
+    <li>2222222</li>
+    <li>2222222</li>
+    <li>2222222</li>
+</div>
+<div id="div3" class="xxx">3</div>
+    <div id="div33" class="yyy">
+    <li>3333333</li>
+    <li>3333333</li>
+    <li>3333333</li>
+    <li>3333333</li>
+    <li>3333333</li>
+</div>
+<script type="text/javascript">
+    $("#div1").click(function(){
+        $("#div11").slideToggle();
+        // $("#div22").slideUp();
+        // $("#div33").slideUp();
+    });
+    $("#div2").click(function(){
+        $("#div22").slideToggle();
+        // $("#div11").slideUp();
+        // $("#div33").slideUp();
+    });
+    $("#div3").click(function(){
+        $("#div33").slideToggle();
+        // $("#div22").slideUp();
+        // $("#div11").slideUp();
+    });
+</script>
+</body>
+</html>

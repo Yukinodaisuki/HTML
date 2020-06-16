@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>如何用js实现点击图片切换为另一图片，再次点击恢复到原图片</title>
+</head>
+<body>
+
+<div id="button">
+    <img id="picts" src="img/点赞.png" alt="">
+</div>
+
+<script>
+
+    function change_pic(){
+        var button = document.getElementById("button");
+
+        var picts = document.getElementById("picts");
+
+        button.onclick = function(){
+            if(picts.getAttribute("src",2) == "img/点赞.png"){
+
+                picts.setAttribute("src","img/点赞 (1).png");
+
+            }else{
+
+                picts.setAttribute("src","img/点赞.png");
+
+            }
+        }
+    }
+    change_pic();
+
+</script>
+
+</body>
+</html>
